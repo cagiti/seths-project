@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Animal Team</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Comic Sans MS, sans-serif;
+      background: #FFF8E1;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+
+    header {
+      background-color: #FF7043;
+      padding: 2em 1em;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    .claw-scratch {
+      position: absolute;
+      top: 0.5em;
+      left: 1em;
+      width: 80px;
+      height: 80px;
+      background-image: url('./img/claws.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .claw-scratch.right {
+      left: auto;
+      right: 1em;
+      transform: scaleX(-1);
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5em;
+      padding: 2em;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .animal-button {
+      background-color: #FFE0B2;
+      border: 4px solid #FF7043;
+      border-radius: 15px;
+      height: 300px;
+      width: 300px;
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s;
+    }
+
+    .animal-button:hover {
+      transform: scale(1.05);
+      background-color: #FFCC80;
+    }
+
+    footer {
+      margin-top: 3em;
+      padding: 1em;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="claw-scratch"></div>
+    <div class="claw-scratch right"></div>
+    <h1>≡ The Animal Team ≡</h1>
+  </header>
+
+  <section class="button-grid">
+    <div class="animal-button">🐯 Cheetah</div>
+    <div class="animal-button">🦊 Fox</div>
+    <div class="animal-button">🐻 Bear</div>
+    <div class="animal-button">🪼 JellyFish</div>
+  </section>
+
+  <footer>
+    Made with ❤️ by a 9-year-old animal lover!
+  </footer>
+
+</body>
+</html>
